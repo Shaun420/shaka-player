@@ -68,10 +68,10 @@ jobs:
           
       #     cat report.md
 
-      # - name: Generate report (malicious code)
-      #   run: |
-      #     echo 'Hello from report.md
-      #     $(echo "INJECTION_SUCCESS")' > report.md
+      - name: Generate report (malicious code)
+        run: |
+          echo 'Hello from report.md
+          $(echo "INJECTION_SUCCESS")' > report.md
 
       - name: Upload report
         uses: actions/upload-artifact@v4
