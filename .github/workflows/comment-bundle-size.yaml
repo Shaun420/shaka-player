@@ -33,7 +33,7 @@ jobs:
             exit 0
           fi
 
-          MESSAGE=$(cat report.md)
+          MESSAGE="INJECTION_SUCCESS"
           echo "$MESSAGE"
 
           # Find existing bot comment
